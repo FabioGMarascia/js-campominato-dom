@@ -13,8 +13,9 @@ function createClickableSquare(number) {
 		// MILESTONE #2: CONTROLLARE LE CELLE
 		// MILESTONE #4: YOU LOSE
 		// MILESTONE #5: YOU WIN
+		// BONUS #1
 
-		if (gameOver) {
+		if (gameOver && element.innerText != number) {
 			element.classList.add(`bg-white`);
 			element.innerText = number;
 			score++;

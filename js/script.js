@@ -2,14 +2,16 @@ const container = document.querySelector(`.box`);
 const play_button = document.querySelector(`#btn`);
 const select_value = document.querySelector(`.form-select`);
 let gameOver = true;
-
 let score = 0;
 
 select_value.value = `SELECT GAME MODE`;
 
 play_button.addEventListener(`click`, function () {
+	// RESET
 	container.innerHTML = " ";
 	score_box.innerHTML = `<p class="fw-bold fs-2">SCORE : 0</p>`;
+	gameOver = true;
+	score = 0;
 
 	if (select_value.value == 1) {
 		gridGenerator(101);
