@@ -33,6 +33,10 @@ function createClickableSquare(number) {
 				i++;
 			}
 			score_box.innerHTML = `<p class="fw-bold fs-2">SCORE : ${score}</p>`;
+			if (score > record) {
+				record = score;
+			}
+			record_box.innerHTML = `<p class="fw-bold fs-2">RECORD : ${record}</p>`;
 		}
 		if (select_value.value == 1 && score == 84) {
 			console.log(score);

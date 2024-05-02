@@ -3,6 +3,7 @@ const play_button = document.querySelector(`#btn`);
 const select_value = document.querySelector(`.form-select`);
 let gameOver = true;
 let score = 0;
+let record = 0;
 
 select_value.value = `SELECT GAME MODE`;
 
@@ -37,3 +38,6 @@ while (bombs_array.length < 16) {
 
 // MILESTONE #3: GESTIRE IL PUNTEGGIO
 const score_box = document.querySelector(`.score`);
+const record_box = document.querySelector(`.record`);
+record_box.innerHTML = `<p class="fw-bold fs-2">RECORD : 0</p>`;
+score_box.innerHTML = `<p class="fw-bold fs-2">SCORE : 0</p>`;
