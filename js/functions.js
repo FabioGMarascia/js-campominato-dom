@@ -28,13 +28,20 @@ function createClickableSquare(number) {
 					score--;
 					alert(`BOMBAAAAAAAAA !! Punteggio: ${score}`);
 					gameOver = false;
-					score = 0;
 				}
 				i++;
 			}
 			score_box.innerHTML = `<p class="fw-bold fs-2">SCORE : ${score}</p>`;
 		}
-		if (score == 84) {
+		if (select_value.value == 1 && score == 84) {
+			console.log(score);
+			alert(`VITTORIAAAAAAAAA !! Punteggio: ${score}`);
+			gameOver = false;
+		} else if (select_value.value == 2 && score == 65) {
+			console.log(score);
+			alert(`VITTORIAAAAAAAAA !! Punteggio: ${score}`);
+			gameOver = false;
+		} else if (select_value.value == 3 && score == 33) {
 			console.log(score);
 			alert(`VITTORIAAAAAAAAA !! Punteggio: ${score}`);
 			gameOver = false;
