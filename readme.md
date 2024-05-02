@@ -29,5 +29,3 @@ MILESTONE #4: YOU LOSE
 MILESTONE #5: YOU WIN
 
 -  Arriverà un momento in cui tutte le celle valide saranno state cliccate. Quello è il caso in cui la partita è vinta. Come me ne accorgo? Ci sono dei dati che posso controllare ogni volta che clicco su una cella per rendermi conto che è l'ultima cella?
-
-creo un ciclo che compara ad ogni sedici delle bombe il numero in questione se == trovato = true;

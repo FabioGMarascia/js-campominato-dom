@@ -9,6 +9,7 @@ select_value.value = `SELECT GAME MODE`;
 
 play_button.addEventListener(`click`, function () {
 	container.innerHTML = " ";
+	score_box.innerHTML = `<p class="fw-bold fs-2">SCORE : 0</p>`;
 
 	if (select_value.value == 1) {
 		gridGenerator(101);
@@ -30,8 +31,6 @@ while (bombs_array.length < 16) {
 	if (!bombs_array.includes(casual_bomb)) {
 		bombs_array.push(casual_bomb);
 	}
-	console.log(casual_bomb);
-	console.log(bombs_array);
 }
 
 // MILESTONE #3: GESTIRE IL PUNTEGGIO

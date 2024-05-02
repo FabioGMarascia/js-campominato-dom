@@ -12,6 +12,7 @@ function createClickableSquare(number) {
 	element.addEventListener(`click`, function () {
 		// MILESTONE #2: CONTROLLARE LE CELLE
 		// MILESTONE #4: YOU LOSE
+		// MILESTONE #5: YOU WIN
 
 		if (gameOver) {
 			element.classList.add(`bg-white`);
@@ -25,12 +26,18 @@ function createClickableSquare(number) {
 					element.classList.remove(`bg-white`);
 					element.classList.add(`bg-warning`);
 					score--;
-					alert(`BOMBAAAAAAAAA ! Punteggio: ${score}`);
+					alert(`BOMBAAAAAAAAA !! Punteggio: ${score}`);
 					gameOver = false;
+					score = 0;
 				}
 				i++;
 			}
-			score_box.innerHTML = `<p>SCORE : ${score}</p>`;
+			score_box.innerHTML = `<p class="fw-bold fs-2">SCORE : ${score}</p>`;
+		}
+		if (score == 84) {
+			console.log(score);
+			alert(`VITTORIAAAAAAAAA !! Punteggio: ${score}`);
+			gameOver = false;
 		}
 	});
 
