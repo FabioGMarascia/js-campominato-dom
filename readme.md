@@ -16,6 +16,7 @@ MILESTONE #2: CONTROLLARE LE CELLE
 -  Al click su una cella dovremmo controllare se QUELLA cella è inclusa nell'elenco di bombe. In baso al caso aggiungiamo coloriamo la cella di azzurro o di rosso.
 
 MILESTONE #3: GESTIRE IL PUNTEGGIO
+
 Abbiamo bisogno di salvare un dato, il punteggio. Questo dato verrà resettato ad ogni avvio di partita. Inoltre ad ogni cella cliccata, se non è una bomba, dobbiamo incrementare il punteggio e stamparlo in console.
 
 MILESTONE #4: YOU LOSE

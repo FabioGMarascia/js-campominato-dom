@@ -10,21 +10,27 @@ function createClickableSquare(number) {
 	}
 
 	element.addEventListener(`click`, function () {
-		element.innerText = number;
 		// MILESTONE #2: CONTROLLARE LE CELLE
-		let i = 0;
-		let found = true;
-		element.classList.add(`bg-white`);
+		// MILESTONE #4: YOU LOSE
 
-		while (i < bombs_array.length && found) {
-			let x = bombs_array[i];
+		if (gameOver) {
+			element.classList.add(`bg-white`);
+			element.innerText = number;
+			score++;
+			let i = 0;
+			while (i < bombs_array.length && gameOver) {
+				let x = bombs_array[i];
 
-			if (x == number) {
-				element.classList.remove(`bg-white`);
-				element.classList.add(`bg-warning`);
-				found = false;
+				if (x == number) {
+					element.classList.remove(`bg-white`);
+					element.classList.add(`bg-warning`);
+					score--;
+					alert(`BOMBAAAAAAAAA ! Punteggio: ${score}`);
+					gameOver = false;
+				}
+				i++;
 			}
-			i++;
+			score_box.innerHTML = `<p>SCORE : ${score}</p>`;
 		}
 	});
 

@@ -1,6 +1,9 @@
 const container = document.querySelector(`.box`);
 const play_button = document.querySelector(`#btn`);
 const select_value = document.querySelector(`.form-select`);
+let gameOver = true;
+
+let score = 0;
 
 select_value.value = `SELECT GAME MODE`;
 
@@ -31,4 +34,5 @@ while (bombs_array.length < 16) {
 	console.log(bombs_array);
 }
 
-// MILESTONE #2: CONTROLLARE LE CELLE
+// MILESTONE #3: GESTIRE IL PUNTEGGIO
+const score_box = document.querySelector(`.score`);
