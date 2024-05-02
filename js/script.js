@@ -1,8 +1,6 @@
 const container = document.querySelector(`.box`);
 const play_button = document.querySelector(`#btn`);
 const select_value = document.querySelector(`.form-select`);
-let a, b, c;
-console.log(a);
 
 select_value.value = `SELECT GAME MODE`;
 
@@ -20,3 +18,17 @@ play_button.addEventListener(`click`, function () {
 		location.reload();
 	}
 });
+
+// MILESTONE #1: GENERARE LE BOME
+let bombs_array = [];
+
+while (bombs_array.length < 16) {
+	let casual_bomb = Math.floor(Math.random() * 100 + 1);
+	if (!bombs_array.includes(casual_bomb)) {
+		bombs_array.push(casual_bomb);
+	}
+	console.log(casual_bomb);
+	console.log(bombs_array);
+}
+
+// MILESTONE #2: CONTROLLARE LE CELLE

@@ -10,13 +10,22 @@ function createClickableSquare(number) {
 	}
 
 	element.addEventListener(`click`, function () {
-		if (element.innerText == number) {
-			element.innerText = " ";
-		} else {
-			element.innerText = number;
-		}
+		element.innerText = number;
+		// MILESTONE #2: CONTROLLARE LE CELLE
+		let i = 0;
+		let found = true;
+		element.classList.add(`bg-white`);
 
-		element.classList.toggle(`bg-warning`);
+		while (i < bombs_array.length && found) {
+			let x = bombs_array[i];
+
+			if (x == number) {
+				element.classList.remove(`bg-white`);
+				element.classList.add(`bg-warning`);
+				found = false;
+			}
+			i++;
+		}
 	});
 
 	return element;
