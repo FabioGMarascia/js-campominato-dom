@@ -1,0 +1,44 @@
+/********************* COMMON **********************/
+body {
+	background-color: #222;
+	color: red;
+	font-family: sans-serif;
+}
+
+#btn {
+	margin: 0 auto;
+}
+
+.square:hover {
+	cursor: pointer;
+}
+
+.square-easy,
+.square-medium,
+.square-hard {
+	border: 2px solid blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.square-easy {
+	width: 80px;
+	height: 80px;
+}
+
+.square-medium {
+	width: calc(800px / 9);
+	height: calc(800px / 9);
+}
+
+.square-hard {
+	width: calc(800px / 7);
+	height: calc(800px / 7);
+}
+
+.box {
+	width: 800px;
+}
