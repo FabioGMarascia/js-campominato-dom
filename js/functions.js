@@ -11,9 +11,10 @@ function createClickableSquare(number) {
 
 	element.addEventListener(`click`, function () {
 		// MILESTONE #2: CONTROLLARE LE CELLE
+		// MILESTONE #3: GESTIRE IL PUNTEGGIO 2/2
 		// MILESTONE #4: YOU LOSE
 		// MILESTONE #5: YOU WIN
-		// BONUS #1
+		// BONUS #1 / RECORD
 
 		if (gameOver && element.innerText != number) {
 			element.classList.add(`bg-white`);

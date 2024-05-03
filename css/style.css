@@ -9,7 +9,9 @@ body {
 	margin: 0 auto;
 }
 
-.square:hover {
+.square-easy:hover,
+.square-medium:hover,
+.square-hard:hover {
 	cursor: pointer;
 }
 

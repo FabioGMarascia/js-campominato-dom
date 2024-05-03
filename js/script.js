@@ -33,7 +33,7 @@ while (bombs_array.length < 16) {
 	}
 }
 
-// MILESTONE #3: GESTIRE IL PUNTEGGIO
+// MILESTONE #3: GESTIRE IL PUNTEGGIO 1/2 / RECORD
 const score_box = document.querySelector(`.score`);
 const record_box = document.querySelector(`.record`);
 record_box.innerHTML = `<p class="fw-bold fs-2">RECORD : 0</p>`;
