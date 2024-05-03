@@ -62,3 +62,10 @@ function gridGenerator(nCelle) {
 		container.append(square);
 	}
 }
+
+function reset() {
+	container.innerHTML = " ";
+	score_box.innerHTML = `<p class="fw-bold fs-2">SCORE : 0</p>`;
+	gameOver = true;
+	score = 0;
+}
