@@ -28,8 +28,6 @@ function createClickableSquare(number) {
 					element.classList.remove(`bg-white`);
 					element.classList.add(`bg-warning`);
 					score--;
-					document.getele;
-
 					alert(`BOMBAAAAAAAAA !! Punteggio: ${score}`);
 					gameOver = false;
 				}
@@ -38,8 +36,9 @@ function createClickableSquare(number) {
 			score_box.innerHTML = `<p class="fw-bold fs-2">SCORE : ${score}</p>`;
 			if (score > record) {
 				record = score;
+				record_box.innerHTML = `<p class="fw-bold fs-2">RECORD : ${record}</p>`;
+				record_stored[select_value.value - 1] = record;
 			}
-			record_box.innerHTML = `<p class="fw-bold fs-2">RECORD : ${record}</p>`;
 		}
 		if (select_value.value == 1 && score == 84) {
 			console.log(score);
