@@ -28,6 +28,8 @@ function createClickableSquare(number) {
 					element.classList.remove(`bg-white`);
 					element.classList.add(`bg-warning`);
 					score--;
+					document.getele;
+
 					alert(`BOMBAAAAAAAAA !! Punteggio: ${score}`);
 					gameOver = false;
 				}
@@ -69,4 +71,5 @@ function reset() {
 	score_box.innerHTML = `<p class="fw-bold fs-2">SCORE : 0</p>`;
 	gameOver = true;
 	score = 0;
+	bombs_array = [];
 }
