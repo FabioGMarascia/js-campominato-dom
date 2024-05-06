@@ -23,8 +23,8 @@ function createClickableSquare(number) {
 			let i = 0;
 			while (i < bombs_array.length && gameOver) {
 				let x = bombs_array[i];
-
 				if (x == number) {
+					console.log(x, number, i);
 					element.classList.remove(`bg-white`);
 					element.classList.add(`bg-warning`);
 					score--;

@@ -7,6 +7,7 @@ let record = 0;
 let bombs_array = [];
 let prev_select = select_value.value;
 let record_stored = [0, 0, 0];
+// let remaining_bombs = [];
 
 select_value.value = `SELECT GAME MODE`;
 
@@ -21,6 +22,8 @@ play_button.addEventListener(`click`, function () {
 			bombs_array.push(casual_bomb);
 		}
 	}
+	// remaining_bombs = bombs_array;
+	// console.log(remaining_bombs);
 
 	if (select_value.value == 1) {
 		if (prev_select != 1) {
